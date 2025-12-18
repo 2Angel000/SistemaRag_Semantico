@@ -1,0 +1,510 @@
+{
+  "estudiantes": [
+    {
+      "matricula": "19520312",
+      "nombre_completo": "María González",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 85,
+          "calificacion_parcial2": 92,
+          "calificacion_parcial3": 88,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 95,
+          "calificacion_parcial2": 82,
+          "calificacion_parcial3": 99,
+          "asistencias": 41,
+          "faltas": 6
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 95,
+          "calificacion_parcial3": 92,
+          "asistencias": 44,
+          "faltas": 3
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 95,
+          "calificacion_parcial2": 82,
+          "calificacion_parcial3": 99,
+          "asistencias": 41,
+          "faltas": 6
+        }
+      ],
+      "promedio_general": 90.08,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "19520313",
+      "nombre_completo": "Juan Pérez Ramírez",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 78,
+          "calificacion_parcial2": 85,
+          "calificacion_parcial3": 80,
+          "asistencias": 40,
+          "faltas": 7
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 75,
+          "calificacion_parcial3": 82,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 90,
+          "calificacion_parcial2": 90,
+          "calificacion_parcial3": 85,
+          "asistencias": 46,
+          "faltas": 1
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 70,
+          "calificacion_parcial2": 65,
+          "calificacion_parcial3": 75,
+          "asistencias": 35,
+          "faltas": 12
+        }
+      ],
+      "promedio_general": 79.58,
+      "estatus": "Condicional"
+    },
+    {
+      "matricula": "19520314",
+      "nombre_completo": "Ana Torres Díaz",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 98,
+          "calificacion_parcial2": 95,
+          "calificacion_parcial3": 100,
+          "asistencias": 47,
+          "faltas": 0
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 92,
+          "calificacion_parcial2": 98,
+          "calificacion_parcial3": 95,
+          "asistencias": 46,
+          "faltas": 1
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 99,
+          "calificacion_parcial2": 100,
+          "calificacion_parcial3": 97,
+          "asistencias": 47,
+          "faltas": 0
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 95,
+          "calificacion_parcial2": 96,
+          "calificacion_parcial3": 98,
+          "asistencias": 45,
+          "faltas": 2
+        }
+      ],
+      "promedio_general": 96.08,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "19520315",
+      "nombre_completo": "Carlos Ruiz Soto",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 70,
+          "calificacion_parcial2": 72,
+          "calificacion_parcial3": 75,
+          "asistencias": 38,
+          "faltas": 9
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 65,
+          "calificacion_parcial2": 68,
+          "calificacion_parcial3": 70,
+          "asistencias": 35,
+          "faltas": 12
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 75,
+          "calificacion_parcial2": 80,
+          "calificacion_parcial3": 82,
+          "asistencias": 40,
+          "faltas": 7
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 72,
+          "calificacion_parcial2": 75,
+          "calificacion_parcial3": 78,
+          "asistencias": 39,
+          "faltas": 8
+        }
+      ],
+      "promedio_general": 73.0,
+      "estatus": "Condicional"
+    },
+    {
+      "matricula": "19520316",
+      "nombre_completo": "Laura Mendoza Gil",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 90,
+          "calificacion_parcial2": 88,
+          "calificacion_parcial3": 92,
+          "asistencias": 44,
+          "faltas": 3
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 95,
+          "calificacion_parcial2": 90,
+          "calificacion_parcial3": 94,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 85,
+          "calificacion_parcial2": 92,
+          "calificacion_parcial3": 90,
+          "asistencias": 43,
+          "faltas": 4
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 85,
+          "calificacion_parcial3": 87,
+          "asistencias": 42,
+          "faltas": 5
+        }
+      ],
+      "promedio_general": 89.5,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "19520317",
+      "nombre_completo": "David Vargas Castro",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 82,
+          "calificacion_parcial2": 78,
+          "calificacion_parcial3": 80,
+          "asistencias": 41,
+          "faltas": 6
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 75,
+          "calificacion_parcial2": 80,
+          "calificacion_parcial3": 78,
+          "asistencias": 40,
+          "faltas": 7
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 90,
+          "calificacion_parcial3": 85,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 80,
+          "calificacion_parcial2": 85,
+          "calificacion_parcial3": 82,
+          "asistencias": 43,
+          "faltas": 4
+        }
+      ],
+      "promedio_general": 82.5,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "19520318",
+      "nombre_completo": "Sofía Herrera Luna",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 95,
+          "calificacion_parcial2": 98,
+          "calificacion_parcial3": 96,
+          "asistencias": 46,
+          "faltas": 1
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 99,
+          "calificacion_parcial2": 95,
+          "calificacion_parcial3": 100,
+          "asistencias": 47,
+          "faltas": 0
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 90,
+          "calificacion_parcial2": 92,
+          "calificacion_parcial3": 94,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 90,
+          "calificacion_parcial3": 92,
+          "asistencias": 44,
+          "faltas": 3
+        }
+      ],
+      "promedio_general": 94.0,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "19520319",
+      "nombre_completo": "Miguel Ángel Ríos Moya",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 60,
+          "calificacion_parcial2": 65,
+          "calificacion_parcial3": 70,
+          "asistencias": 30,
+          "faltas": 17
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 70,
+          "calificacion_parcial2": 72,
+          "calificacion_parcial3": 68,
+          "asistencias": 35,
+          "faltas": 12
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 75,
+          "calificacion_parcial2": 60,
+          "calificacion_parcial3": 65,
+          "asistencias": 33,
+          "faltas": 14
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 68,
+          "calificacion_parcial2": 70,
+          "calificacion_parcial3": 72,
+          "asistencias": 36,
+          "faltas": 11
+        }
+      ],
+      "promedio_general": 67.58,
+      "estatus": "Irregular"
+    },
+    {
+      "matricula": "2024002",
+      "nombre_completo": "Carlos Rodríguez",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 80,
+          "calificacion_parcial2": 82,
+          "calificacion_parcial3": 85,
+          "asistencias": 42,
+          "faltas": 5
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 85,
+          "calificacion_parcial2": 88,
+          "calificacion_parcial3": 90,
+          "asistencias": 43,
+          "faltas": 4
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 92,
+          "calificacion_parcial2": 95,
+          "calificacion_parcial3": 90,
+          "asistencias": 45,
+          "faltas": 2
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 88,
+          "calificacion_parcial2": 90,
+          "calificacion_parcial3": 92,
+          "asistencias": 44,
+          "faltas": 3
+        }
+      ],
+      "promedio_general": 87.92,
+      "estatus": "Regular"
+    },
+    {
+      "matricula": "2024001",
+      "nombre_completo": "Ricardo Morales Blanco",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 75,
+          "calificacion_parcial2": 70,
+          "calificacion_parcial3": 72,
+          "asistencias": 37,
+          "faltas": 10
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 80,
+          "calificacion_parcial2": 75,
+          "calificacion_parcial3": 78,
+          "asistencias": 39,
+          "faltas": 8
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 68,
+          "calificacion_parcial2": 70,
+          "calificacion_parcial3": 65,
+          "asistencias": 34,
+          "faltas": 13
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 72,
+          "calificacion_parcial2": 68,
+          "calificacion_parcial3": 70,
+          "asistencias": 36,
+          "faltas": 11
+        }
+      ],
+      "promedio_general": 72.5,
+      "estatus": "Condicional"
+    },
+    {
+      "matricula": "2020001",
+      "nombre_completo": "Ricardo Morales Peréz",
+      "carrera": "Ingeniería en Sistemas",
+      "semestre": 5,
+      "materias": [
+        {
+          "nombre": "Base de datos",
+          "clave": "ISW-501",
+          "calificacion_parcial1": 75,
+          "calificacion_parcial2": 70,
+          "calificacion_parcial3": 72,
+          "asistencias": 37,
+          "faltas": 10
+        },
+        {
+          "nombre": "Programación Avanzada",
+          "clave": "ISW-502",
+          "calificacion_parcial1": 80,
+          "calificacion_parcial2": 75,
+          "calificacion_parcial3": 78,
+          "asistencias": 39,
+          "faltas": 8
+        },
+        {
+          "nombre": "Programación Web",
+          "clave": "ISW-503",
+          "calificacion_parcial1": 68,
+          "calificacion_parcial2": 70,
+          "calificacion_parcial3": 65,
+          "asistencias": 34,
+          "faltas": 13
+        },
+        {
+          "nombre": "Programación Móvil",
+          "clave": "ISW-504",
+          "calificacion_parcial1": 72,
+          "calificacion_parcial2": 68,
+          "calificacion_parcial3": 70,
+          "asistencias": 36,
+          "faltas": 11
+        }
+      ],
+      "promedio_general": 72.5,
+      "estatus": "Condicional"
+    }
+  ]
+}
