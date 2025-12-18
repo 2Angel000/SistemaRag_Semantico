@@ -1,0 +1,151 @@
+CREATE TABLE estudiantes (
+    matricula           VARCHAR(20) PRIMARY KEY,
+    nombre_completo     VARCHAR(150) NOT NULL,
+    carrera             VARCHAR(100) NOT NULL,
+    semestre            INTEGER NOT NULL,
+    promedio_general    NUMERIC(5,2),
+    estatus             VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE materias (
+    clave       VARCHAR(20) PRIMARY KEY,
+    nombre      VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE kardex_estudiante_materia (
+    id                      SERIAL PRIMARY KEY,
+    matricula               VARCHAR(20) NOT NULL,
+    clave_materia           VARCHAR(20) NOT NULL,
+    calificacion_parcial1   INTEGER NOT NULL,
+    calificacion_parcial2   INTEGER NOT NULL,
+    calificacion_parcial3   INTEGER NOT NULL,
+    asistencias             INTEGER NOT NULL,
+    faltas                  INTEGER NOT NULL,
+    CONSTRAINT fk_kardex_estudiante
+        FOREIGN KEY (matricula) REFERENCES estudiantes(matricula),
+    CONSTRAINT fk_kardex_materia
+        FOREIGN KEY (clave_materia) REFERENCES materias(clave)
+);
+
+
+INSERT INTO materias (clave, nombre) VALUES
+('ISW-501', 'Base de datos'),
+('ISW-502', 'Programación Avanzada'),
+('ISW-503', 'Programación Web'),
+('ISW-504', 'Programación Móvil');
+
+
+
+-- -------------
+
+INSERT INTO estudiantes (
+    matricula, nombre_completo, carrera, semestre, promedio_general, estatus
+) VALUES
+('19520312', 'María González', 'Ingeniería en Sistemas', 5, 90.08, 'Regular'),
+('19520313', 'Juan Pérez Ramírez', 'Ingeniería en Sistemas', 5, 79.58, 'Condicional'),
+('19520314', 'Ana Torres Díaz', 'Ingeniería en Sistemas', 5, 96.08, 'Regular'),
+('19520315', 'Carlos Ruiz Soto', 'Ingeniería en Sistemas', 5, 73.00, 'Condicional'),
+('19520316', 'Laura Mendoza Gil', 'Ingeniería en Sistemas', 5, 89.50, 'Regular'),
+('19520317', 'David Vargas Castro', 'Ingeniería en Sistemas', 5, 82.50, 'Regular'),
+('19520318', 'Sofía Herrera Luna', 'Ingeniería en Sistemas', 5, 94.00, 'Regular'),
+('19520319', 'Miguel Ángel Ríos Moya', 'Ingeniería en Sistemas', 5, 67.58, 'Irregular'),
+('2024002',  'Carlos Rodríguez', 'Ingeniería en Sistemas', 5, 87.92, 'Regular'),
+('2024001',  'Ricardo Morales Blanco', 'Ingeniería en Sistemas', 5, 72.50, 'Condicional');
+
+INSERT INTO estudiantes (
+	matricula, nombre_completo, carrera, semestre, promedio_general, estatus
+) VALUES
+	('19520000', 'Williams', 'Ingeniería Informatica', 5, 90.08, 'Regular');
+
+INSERT INTO kardex_estudiante_materia (
+    matricula,
+    clave_materia,
+    calificacion_parcial1,
+    calificacion_parcial2,
+    calificacion_parcial3,
+    asistencias,
+    faltas
+) VALUES
+-- 19520000 - Williams
+('19520000','ISW-501',85,92,88,45,2);
+
+
+INSERT INTO kardex_estudiante_materia (
+    matricula,
+    clave_materia,
+    calificacion_parcial1,
+    calificacion_parcial2,
+    calificacion_parcial3,
+    asistencias,
+    faltas
+) VALUES
+-- 19520312 - María González
+('19520312','ISW-501',85,92,88,45,2),
+('19520312','ISW-502',95,82,99,41,6),
+('19520312','ISW-503',88,95,92,44,3),
+('19520312','ISW-504',95,82,99,41,6),
+
+-- 19520313 - Juan Pérez Ramírez
+('19520313','ISW-501',78,85,80,40,7),
+('19520313','ISW-502',88,75,82,45,2),
+('19520313','ISW-503',90,90,85,46,1),
+('19520313','ISW-504',70,65,75,35,12),
+
+-- 19520314 - Ana Torres Díaz
+('19520314','ISW-501',98,95,100,47,0),
+('19520314','ISW-502',92,98,95,46,1),
+('19520314','ISW-503',99,100,97,47,0),
+('19520314','ISW-504',95,96,98,45,2),
+
+-- 19520315 - Carlos Ruiz Soto
+('19520315','ISW-501',70,72,75,38,9),
+('19520315','ISW-502',65,68,70,35,12),
+('19520315','ISW-503',75,80,82,40,7),
+('19520315','ISW-504',72,75,78,39,8),
+
+-- 19520316 - Laura Mendoza Gil
+('19520316','ISW-501',90,88,92,44,3),
+('19520316','ISW-502',95,90,94,45,2),
+('19520316','ISW-503',85,92,90,43,4),
+('19520316','ISW-504',88,85,87,42,5),
+
+-- 19520317 - David Vargas Castro
+('19520317','ISW-501',82,78,80,41,6),
+('19520317','ISW-502',75,80,78,40,7),
+('19520317','ISW-503',88,90,85,45,2),
+('19520317','ISW-504',80,85,82,43,4),
+
+-- 19520318 - Sofía Herrera Luna
+('19520318','ISW-501',95,98,96,46,1),
+('19520318','ISW-502',99,95,100,47,0),
+('19520318','ISW-503',90,92,94,45,2),
+('19520318','ISW-504',88,90,92,44,3),
+
+-- 19520319 - Miguel Ángel Ríos Moya
+('19520319','ISW-501',60,65,70,30,17),
+('19520319','ISW-502',70,72,68,35,12),
+('19520319','ISW-503',75,60,65,33,14),
+('19520319','ISW-504',68,70,72,36,11),
+
+-- 2024002 - Carlos Rodríguez
+('2024002','ISW-501',80,82,85,42,5),
+('2024002','ISW-502',85,88,90,43,4),
+('2024002','ISW-503',92,95,90,45,2),
+('2024002','ISW-504',88,90,92,44,3),
+
+-- 2024001 - Ricardo Morales Blanco
+('2024001','ISW-501',75,70,72,37,10),
+('2024001','ISW-502',80,75,78,39,8),
+('2024001','ISW-503',68,70,65,34,13),
+('2024001','ISW-504',72,68,70,36,11);
+
+
+select * from estudiantes;
+select * from materias;
+select * from kardex_estudiante_materia;
+
+
+
+
+ALTER USER postgres PASSWORD '123Admin';
+
