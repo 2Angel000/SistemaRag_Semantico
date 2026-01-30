@@ -1,22 +1,23 @@
 # db_postgres.py
+import os
 import psycopg2
 
 
 def obtener_estudiantes_desde_db():
     """
-    Lee estudiantes y materias desde PostgreSQL y devuelve
-    un diccionario con la misma estructura que datos_estudiantes.json.
+    Conecta a PostgreSQL usando variables de entorno definidas en docker-compose.
     """
     conn = psycopg2.connect(
-        host="localhost",
-        port=5432,
-        database="UAGro",  # el DB que pusiste en la consola
-        user="postgres",
-        password="123Admin",
+        host=os.getenv("DB_HOST", "localhost"),          # nombre del servicio en docker-compose
+        port=int(os.getenv("DB_PORT", 5432)),
+        database=os.getenv("DB_NAME", "UAGro"),
+        user=os.getenv("DB_USER", "postgres"),
+        password=os.getenv("DB_PASSWORD", "13102000"),
     )
+
     cur = conn.cursor()
 
-    # Ajusta nombres de tabla/columnas según tu esquema real
+    # Ajusta nombres de tabla/columnas según tu esquema
     cur.execute("""
         SELECT
             matricula,
@@ -37,7 +38,7 @@ def obtener_estudiantes_desde_db():
         cur.execute("""
             SELECT
                 nombre,
-                clave,
+            clave,
                 calificacion_parcial1,
                 calificacion_parcial2,
                 calificacion_parcial3,
@@ -73,4 +74,5 @@ def obtener_estudiantes_desde_db():
     cur.close()
     conn.close()
 
+    # Misma estructura que tu datos_estudiantes.json
     return {"estudiantes": estudiantes}

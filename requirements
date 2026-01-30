@@ -1,0 +1,4 @@
+psycopg2-binary
+streamlit
+sentence-transformers
+python-docx
